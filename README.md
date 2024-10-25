@@ -1,5 +1,5 @@
 # Crop-price-prediction
-This repository contains a Random Forest-based machine learning model that predicts crop prices based on historical data, weather patterns, and economic indicators. 
+This repository contains a KNN based machine learning model that predicts crop prices based on historical data, weather patterns, and economic indicators. 
 ## Features
 Historical crop price data
 Weather data (temperature, rainfall, etc.)
