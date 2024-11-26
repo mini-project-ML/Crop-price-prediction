@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("{{ url_for('static', filename='images/Crop_Final.jpg') }}") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+.background-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/static/images/Crop_Final.jpg") no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(8px); /* Apply blur to the background */
+    z-index: -1; /* Make sure the background stays behind the form */
+}
+
+.form-container {
+    max-width: 450px;  /* Increase width for better alignment */
+    width: 100%;  /* Ensure the form is responsive */
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.8);  /* Slightly more opaque for better contrast */
+    padding: 30px;
+    border-radius: 10px;  /* Increased border radius for smoother edges */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);  /* Softer shadow */
+    text-align: left;  /* Center text inside the form */
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, button {
+    width: 95%;
+    padding: 12px;
+    margin-top: 15px;  /* More spacing between elements */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1.1em;  /* Slightly larger text for better readability */
+}
+
+button {
+    width: 100%; /* Makes the button span the full width of the form container */
+    padding: 15px; /* Increased padding for a taller button */
+    margin-top: 20px; /* Increased spacing between the fields and the button */
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em; /* Slightly larger text for better readability */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #27ae60;
+    text-align: center;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .form-container {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    input, button {
+        width: 100%;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 12px;
+    }
+}
